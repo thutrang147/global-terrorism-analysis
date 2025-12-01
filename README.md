@@ -25,7 +25,8 @@ This project analyzes nearly five decades of global terrorism data (1970–2017)
 ```
 GlobalTerrorism/
 ├── data/
-│   └── globalterrorismdb.csv
+│   ├── globalterrorismdb.csv
+│   └── ne_110m_admin_0_countries.*  # Natural Earth shapefile components
 ├── main.ipynb
 ├── README.md
 └── requirements.txt
@@ -49,11 +50,16 @@ GlobalTerrorism/
    pip install -r requirements.txt
    ```
 
-4. **Run the notebook:**  
-   Open `main.ipynb` in Jupyter or VSCode and execute the cells in order.
+4. **Download the data:**  
+   - Download the main dataset:  
+     [Global Terrorism Database Download Page](https://www.start.umd.edu/gtd/contact/)  
+     Place `globalterrorismdb.csv` in the `data/` folder.
+   - Download the world countries shapefile (Natural Earth):  
+     [ne_110m_admin_0_countries.zip](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip)  
+     Unzip and place all files (e.g., `.shp`, `.shx`, `.dbf`, etc.) into the `data/` folder.
 
-5. **Data:**  
-   Place `globalterrorismdb.csv` in the `data/` folder.
+5. **Run the notebook:**  
+   Open `main.ipynb` in Jupyter or VSCode and execute the cells in order.
 
 > **Tip:** In VS Code, use the command palette to select the Python interpreter from `.venv` for best compatibility.
 
