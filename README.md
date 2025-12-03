@@ -52,10 +52,10 @@ GlobalTerrorism/
 
 4. **Download the data:**  
    - Download the main dataset:  
-     [Global Terrorism Database Download Page](https://www.start.umd.edu/gtd/contact/)  
+     [Global Terrorism Database Download Page](https://www.start.umd.edu/gtd-download)  
      Place `globalterrorismdb.csv` in the `data/` folder.
    - Download the world countries shapefile (Natural Earth):  
-     [ne_110m_admin_0_countries.zip](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip)  
+     [ne_110m_admin_0_countries.zip](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/)  
      Unzip and place all files (e.g., `.shp`, `.shx`, `.dbf`, etc.) into the `data/` folder.
 
 5. **Run the notebook:**  
