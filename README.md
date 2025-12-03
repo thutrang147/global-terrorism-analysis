@@ -41,9 +41,18 @@ GlobalTerrorism/
    ```
 
 2. **Activate the virtual environment:**  
-   ```
-   source .venv/bin/activate
-   ```
+   - **On macOS/Linux:**  
+     ```
+     source .venv/bin/activate
+     ```
+   - **On Windows (Command Prompt):**  
+     ```
+     .venv\Scripts\activate
+     ```
+   - **On Windows (PowerShell):**  
+     ```
+     .venv\Scripts\Activate.ps1
+     ```
 
 3. **Install dependencies:**  
    ```
