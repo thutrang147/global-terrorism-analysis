@@ -1,24 +1,81 @@
-# Global Terrorism Database Analysis
+# Global Terrorism Database: From Chaos to Clarity
+## The Power of Data Preprocessing & Unmasking the Unknown
+
+### Course Information
+**Course:** Data Preparation and Visualization - Final Project  
+**Institution:** National Economics University  
+**Academic Year:** 2024-2025
+
+---
 
 ## Project Overview
 
-This project analyzes nearly five decades of global terrorism data (1970–2017) from the **Global Terrorism Database (GTD)**, maintained by the START Consortium at the University of Maryland. The GTD is the most comprehensive unclassified database on terrorist events worldwide, containing detailed information on over 181,000 attacks.
+This project moves beyond standard descriptive statistics to investigate the **strategic behavior** of global terrorism over nearly five decades (1970-2017). Using the **Global Terrorism Database (GTD)**, we shift the analytical focus from *"What happened?"* to *"Why is it lethal?"* and *"Who is behind the silence?"*
 
-### Objectives
+The analysis is structured into two critical investigations:
+1. **Deconstructing the "Efficiency Paradox"** of attack tactics
+2. **"Ghost Hunting"** - Profiling unknown perpetrators using Machine Learning clustering
 
-- **Temporal Analysis:** Identify patterns, trends, and turning points in terrorist activity over 48 years.
-- **Geographic Mapping:** Visualize regional concentrations and country-level hotspots.
-- **Tactical Evolution:** Analyze attack methods, weaponry, and target selection patterns.
-- **Actor Profiling:** Use machine learning to cluster unknown perpetrators and analyze group longevity.
-- **Human Impact:** Quantify casualties, hostage situations, and victim demographics.
+### Dataset Characteristics
+- **Source:** Global Terrorism Database (GTD) by START Consortium
+- **Scope:** 181,691 incidents (1970-2017)
+- **Coverage:** 205 countries, 12 regions, 135 variables
+- **Key Features:** AttackType, WeaponType, Suicide, Casualties (nkill + nwound), Region, Group Name
 
-## Features
+---
 
-- **Data Cleaning:** Handle missing values, remove incomplete years, engineer features.
-- **Visualization:** Professional dashboards using Matplotlib, Seaborn, Plotly.
-- **Machine Learning:** PCA + KMeans clustering for perpetrator profiling.
-- **Statistical Analysis:** Temporal aggregations, geographic distributions, and correlation studies.
-- **In-depth Analysis:** Compare Muslim-majority and Western regions, analyze group dynamics, and hostage situations.
+## Strategic Objectives
+
+### 1. The Efficiency Paradox
+Challenge the assumption that high-frequency attacks are the most dangerous by visualizing the trade-off between **Popularity** (e.g., Bombing) and **Lethality** (e.g., Hijacking).
+
+### 2. Anatomy of Lethality
+- Dissect the **"Suicide Multiplier"** effect
+- Map **"Regional Signatures"** to understand how terrain and power dynamics dictate tactical choices
+
+### 3. "Ghost Hunting" (Clustering)
+Address the critical data gap where ~50% of attacks are attributed to "Unknown" groups. We apply **K-Means Clustering** to profile these invisible actors into **5 distinct operational personas**:
+- **Cluster 0:** The Agitator (Amateur/Low-level)
+- **Cluster 1:** The Guerrilla
+- **Cluster 2:** The Specialist (Kidnapping)
+- **Cluster 3:** The Mass-Casualty Bomber
+- **Cluster 4:** The Assassin
+
+---
+
+## 🔍 Methodology
+
+### Data Preprocessing Pipeline
+1. **Contradictory Statements:** Fix logical errors (nkill < nkillus)
+2. **Secret Language of Missing Values:** Standardize error codes (-9, -99, NaN)
+3. **Forgotten Cases:** Remove columns with >90% missing values
+4. **Case Studies:** Clean specific columns (nperps, nhostkid)
+
+### Machine Learning Approach
+- **Technique:** MiniBatchKMeans with PCA dimensionality reduction
+- **Preprocessing:** Winsorization, Log transformation, Quantile normalization
+- **Encoding:** Frequency encoding for categorical features, One-hot encoding
+- **Validation:** Silhouette analysis and cluster interpretation
+
+### Visualization Strategy
+- **Treemap:** Cluster volume comparison
+- **Horizontal Stacked Bar:** Lethality analysis (killed + wounded)
+- **100% Stacked Bar:** Tactical fingerprint (attack type distribution)
+- **Area Chart:** Success rate comparison
+
+---
+
+## 👥 Team Contributions
+
+| Team Member | Student ID | Contribution |
+|------------|-----------|--------------|
+| **Vu Ngoc Hong Anh** | 11230520 | 20% |
+| **Nguyen Thi Thu Trang** | 11230595 |  20% |
+| **Tran Tuan Anh** | 11230515 | 20% |
+| **Nguyen Phuong Dong** | 11230530 | 20% |
+| **Nguyen Vinh Khanh** | 11230549 | 20% |
+
+---
 
 ## Folder Structure
 
