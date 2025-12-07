@@ -2,3 +2,5 @@
 data/globalterrorismdb.csv
 data/terrorism_cleaned.csv
 data/ne_110m_admin_0_countries
+data/terrorism_cluster.csv
+main1.ipynb
