@@ -69,7 +69,7 @@ Address the critical data gap where ~50% of attacks are attributed to "Unknown" 
 
 | Team Member | Student ID | Contribution |
 |------------|-----------|--------------|
-| **Vu Ngoc Hong Anh (Leader)** | 11230520 | 20% |
+| **Vu Ngoc Hong Anh (Leader)** | 11230517 | 20% |
 | **Nguyen Thi Thu Trang** | 11230595 |  20% |
 | **Tran Tuan Anh** | 11230515 | 20% |
 | **Nguyen Phuong Dong** | 11230530 | 20% |
