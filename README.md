@@ -43,7 +43,7 @@ Address the critical data gap where ~50% of attacks are attributed to "Unknown" 
 
 ---
 
-## 🔍 Methodology
+## Methodology
 
 ### Data Preprocessing Pipeline
 1. **Contradictory Statements:** Fix logical errors (nkill < nkillus)
@@ -65,11 +65,11 @@ Address the critical data gap where ~50% of attacks are attributed to "Unknown" 
 
 ---
 
-## 👥 Team Contributions
+## Team Contributions
 
 | Team Member | Student ID | Contribution |
 |------------|-----------|--------------|
-| **Vu Ngoc Hong Anh** | 11230520 | 20% |
+| **Vu Ngoc Hong Anh (Leader)** | 11230520 | 20% |
 | **Nguyen Thi Thu Trang** | 11230595 |  20% |
 | **Tran Tuan Anh** | 11230515 | 20% |
 | **Nguyen Phuong Dong** | 11230530 | 20% |
